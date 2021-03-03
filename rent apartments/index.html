@@ -1,0 +1,461 @@
+  <!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="Css/nouislider.css">
+    <link rel="stylesheet" href="Css/style.css">
+    
+  </head>
+
+  <body>
+    <!--Start nav bar--> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="add.html">اضافة عرض </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="advice.html">  نصائح  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">  تواصل معنا   </a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    <!--End nav bar--> 
+
+
+    <!--Start header--> 
+       <!--Start header--> 
+       <section class="header"> 
+        <div class="bg-area"></div>
+        <div class="bg-area layer-2"></div>
+        <div class="bg-area layer-3"></div>
+        <div class="banner-text">
+          <p> <h2>سكن</h2> <span class="ityped"></span> </p>
+        </div>
+      </section>  
+      <!--end header--> 
+    <!--end header--> 
+    <!--Start content-->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <!--Start slide navbar for search-->
+          <div class="col-md-4 search">
+            <ul class="collapsible expandable " data-collapsible = "expandable">
+              <li>
+              <div class="collapsible-header" tabindex="0">
+                <span>السعر </span>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="collapsible-body">
+                <div id="test-slider"></div>
+                <div class="row">
+                  <div class="input-field col-md-6">
+                    <input  id="first_name" type="text" class="validate">
+                    <label for="first_name">اكثر سعر </label>
+                  </div>
+                  <div class="input-field col-md-6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name"> اقل سعر </label>
+                  </div>
+                </div>
+                <a class="waves-effect waves">اعرض</a>
+
+              </div>
+              </li>
+              <li>
+                <div class="collapsible-header" tabindex="0">
+                    <span>الدور </span>
+                    <i class="fas fa-plus"></i>
+
+                </div>
+                <div class="collapsible-body">
+                    <div class="input-field ">
+                      <select>
+                        <option value="" disabled selected>اختر الدور</option>
+                        <option value="1">الدور 1</option>
+                        <option value="2">الدور 2</option>
+                        <option value="3">الدور 3</option>
+                        <option value="4">الدور 4</option>
+                        <option value="5">الدور 5</option>
+                        <option value="6">الدور 6</option>
+
+                      </select>
+                      <label>الدور </label>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header" tabindex="0">
+                    <span>عدد الغرف </span>
+                    <i class="fas fa-plus"></i>
+
+                </div>
+                <div class="collapsible-body">
+                    <div class="input-field ">
+                      <select>
+                        <option value="" disabled selected>اختر عدد الغرف</option>
+                        <option value="1">غرفة واحدة</option>
+                        <option value="2">  غرفتين</option>
+                        <option value="3">ثلاث غرف</option>
+                        <option value="4">اربع غرف</option>
+                      </select>
+                      <label>عدد الغرف  </label>
+                    </div>
+                </div>
+              </li>
+              <li>
+              <div class="collapsible-header" tabindex="0">
+                <span>المكان </span>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="collapsible-body">
+                <div class="input-field ">
+                  <input  id="place" type="text" class="validate">
+                  <label for="place">المكان </label>
+                  <a class="waves-effect waves">اعرض</a>
+                </div>
+              </div>
+              </li>
+              <li>
+                <div class="collapsible-header" tabindex="0">
+                  <span>الحالة </span>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="collapsible-body">
+                  <div class="input-field ">
+                    <form action="#">
+                      <p class="row">
+                        <label class="col s6">
+                          <input type="checkbox" />
+                          <span class="first">غير مكيفة</span>
+                        </label>
+                        <label class="col s6">
+                          <input type="checkbox" />
+                          <span>مكيفة </span>
+                        </label>
+                      </p>
+                      </form>
+                  </div>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header" tabindex="0">
+                    <span>عدد الافراد  </span>
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="input-field ">
+                      <input  id="number_person" type="text" class="validate">
+                      <label for="number_person">عدد الافراد </label>
+                      <a class="waves-effect waves">اعرض</a>
+                    </div>
+                  </div>
+                  </li>
+        </ul>
+
+          </div>
+          <!--end slide navbar for search-->
+          <!--Start content box-->
+          <div class="col-md-8 cont">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\1.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\2.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\3.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\4.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\5.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\6.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\7.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="images\content\8.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> الاقصر البياضية</h5>
+                    <p class="card-text">2000 جنيه شهريا</p>
+                    <span> 3 غرف  </span> <span> 200 متر مربع </span>
+                    <div class="calling">
+                      <a href=""><i class="fas fa-phone-alt"></i> اتصل </a>
+                      <a href=""><i class="fas fa-heart"></i> حفظ</a>
+                      <a href=""><i class="fas fa-envelope"></i> البريد الالكتروني </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>       
+          <!--end content box-->
+
+        </div>
+      </div>
+    </section>
+    <!--end content--> 
+
+
+    <section class="barslide">
+      <div class="container">
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="container">
+        <h5>اراء المستخدمين </h5>
+        <div class="scroll-list list">
+          <ul style="margin-top: -46px;"> 
+            <li>
+                <div class="clearfix"> 
+                  <a class="post-user fl">
+                    <img src="images/avater.jpg" class="post-user-avatar">
+                  </a>
+                  <div class="post-info-right"> <span class="post-user-name">مستخدم 1</span>
+                    <p class="post-con">انها منطقة رائعة اوصي وبشدة للايجار في هذه المنطقة</p>
+                  </div>
+                </div>
+            </li>
+            <li>
+              <div class="clearfix"> 
+                <a class="post-user fl">
+                  <img src="images/avater.jpg" class="post-user-avatar">
+                </a>
+                <div class="post-info-right"> <span class="post-user-name">مستخدم 2</span>
+                  <p class="post-con"> من رأي انها افضل المناطق للسكن فيها</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="clearfix"> 
+                <a class="post-user fl">
+                  <img src="images/avater.jpg" class="post-user-avatar">
+                </a>
+                <div class="post-info-right"> <span class="post-user-name">مستخدم 3</span>
+                  <p class="post-con">انها منطقة رائعة اوصي وبشدة للايجار في هذه المنطقة.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="clearfix"> 
+                <a class="post-user fl">
+                  <img src="images/avater.jpg" class="post-user-avatar">
+                </a>
+                <div class="post-info-right"> <span class="post-user-name">مستخدم 4</span>
+                  <p class="post-con">من رأي انها افضل المناطق للسكن فيها</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="clearfix"> 
+                <a class="post-user fl">
+                  <img src="images/avater.jpg" class="post-user-avatar">
+                </a>
+                <div class="post-info-right"> <span class="post-user-name">مستخدم 5</span>
+                  <p class="post-con">انها منطقة رائعة اوصي وبشدة للايجار في هذه المنطقة</p>
+                </div>
+              </div>
+            </li>   
+          </ul>
+        </div>
+      </div>
+      
+      
+    </section>
+
+
+   
+    <!--Start footer-->
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 desc">
+            <h5>سكن </h5>
+            <p>خدمات سكن تساعدك علي ايجار  شقق للمغتربين وخاصة فئة الطلاب  لتسهيل عمليةالايجار </p>
+          </div>
+          <div class="col-md-5 servi">
+            <ul>
+              <h5>خدماتنا</h5>
+              <li><a href="about.html">نبذه عنا  </a></li>
+              <li><a href="advice.html"> نصائح</a></li>
+              <li><a href="contact.html"> تواصل معنا  </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--close footer-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="js/seamlessRolling.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/wNumb.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main1.js"></script>
+    <script src="js/publicjquery.js"></script>
+    <script src="js/publicjavascript.js"></script>     
+
+
+  
+
+  </body>
+</html>
+      
